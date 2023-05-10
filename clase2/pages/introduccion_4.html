@@ -7,14 +7,16 @@
     <title>Formulario práctica</title>
 </head>
 <body>
-    <form action="" method="" enctype="">
+    <form action="./*" method="post" enctype="">
         <fieldset>
             <legend>Información personal</legend>
             <p>Completa el siguiente formulario.</p>
             <label for="Nombre">Nombre:</label> <br>
-            <input type="text" name="Nombre" placeholder="Escribe tu nombre"><br><br>
-            <label for="Apellido">Apellido:</label> <br>
-            <input type="text" name="Apellido" placeholder="Escribe tu apellido"><br><br>
+            <input type="text" name="Nombre" placeholder="Escribe tu nombre" maxlength="20"><br><br>
+            <label for="Apellido" >Apellido:</label> <br>
+            <input type="text" name="Apellido" placeholder="Escribe tu apellido" minlength="3"><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
 
             <p>Talles:<select name="Talles">
                 <option value="s">Small</option>
