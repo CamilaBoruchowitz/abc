@@ -1,0 +1,42 @@
+body{
+    background: rgb(220, 220, 238);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*flexbox es responsivo*/
+.contenedorPadre{
+    display: flex;
+    flex-direction: column;/*uno debajo de otro*/
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;/*lo muestra inverso tambien column reverse*/
+    flex-direction: row;/*row es su arranque por default con fila*/
+    flex-wrap: wrap-reverse;/*salta de linea e invierte las filas parecido al row-reverse*/
+    flex-wrap: nowrap;/* no salta de linea*/
+    flex-wrap: wrap; /*se va adaptando al dispositivo*/
+    justify-content: flex-start;/*inicia los elementos en left*/
+    justify-content: flex-end;/*inicia los elementos en right*/
+    justify-content: center;
+    justify-content: space-around;/*separa con el mismo margin*/
+    justify-content: space-between;/*en left y right deja distinto el espacio, es igual en los de dentro*/
+    justify-content: space-evenly;/*deja un poco mas de margin right y left*/
+    align-content: end;/*ordena elementos final*/
+    align-content: center;/*ordena elementos centro*/
+    /*algin-content flex end o flex start es igual sin poner el flex*/  
+    /* align-items: end; align-items: center; para ver esto hay que eliminar todo hasta wrap*/
+    padding: 20px;
+    background: blue;
+    height: 600px;
+     /*display es la posibilidad de ver de determinada manera ciertos elementos*/
+}
+.contenedorPadre div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px; /*despues sacamos*/
+}
