@@ -1,0 +1,46 @@
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+#productos{
+    grid-area: productos;
+}
+
+#servicios{
+    grid-area: servicios;
+}
+
+aside{
+    grid-area: publicidad;
+}
+
+footer{
+    grid-area: footer;
+}
+.grilla{
+
+    display: grid;
+
+    grid-template-areas:/*pongo entre comillas los elementos que acomodo en fila columna*/
+
+    "nav header header"
+
+    "nav productos publicidad"
+
+    "nav servicios publicidad"
+
+    "nav footer footer";
+
+    grid-template-rows: 300px 100px 100px 100px;
+
+    grid-template-columns: 20% auto 15%;
+
+}

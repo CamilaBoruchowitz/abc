@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repaso html css</title>
+    <title>repaso formulario</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text">
+        <br>
+        <label for="email">Email</label>
+        <input type="email">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" min="10" max="100" disabled>
+        <br>
+        <label for="fecha">Fecha</label>
+        <input  type="date" min="1950-01-01" max="2023-05-03">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password"><!--puso el pattern pero con un monton de cosas un codigo-->
+        <br>
+        <label for="password">Repita el password</label>
+        <input type="password" id="otropassword">
+        <br>
+        <label for="provincia">Provincia</label>
+        <select name="provincia" id="provincia">
+            <optgroup>
+                <option value="CABA">CABA</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+            </optgroup>
+
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="./pages/index.js"></script>
 </body>
 </html>
