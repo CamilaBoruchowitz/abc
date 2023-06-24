@@ -10,5 +10,5 @@ if( user == 'Pepe' && pass == 1234){
 }
 else {
     alert('Usuario o password incorrecto');
-    location.href = './pages/error.html'
+    location.href = '../pages/error.html'
 }
