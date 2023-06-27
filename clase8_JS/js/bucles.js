@@ -64,6 +64,7 @@ console.log(persona.length);
 
 for(let i = 0; i < persona.length; i++){
     console.log('Los elementos de persona son: ${persona[i]} ');
+    console.log('los elementos de persona son: ' + persona[i]);
 }
 
 console.log('=========================================');
